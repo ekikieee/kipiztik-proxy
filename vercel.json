@@ -1,3 +1,8 @@
 {
-  "rewrites": [{ "source": "/api", "destination": "/proxy.js" }]
+  "functions": {
+    "api/proxy.js": {
+      "memory": 128,
+      "maxDuration": 10
+    }
+  }
 }
